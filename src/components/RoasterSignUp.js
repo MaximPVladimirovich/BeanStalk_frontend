@@ -43,7 +43,7 @@ const RoasterSignUp = function () {
         };
         axios
             .post(
-                "http://localhost:3001/registrations",
+                "https://beanstalk-api.herokuapp.com/registrations",
                 {
                     roaster: {
                         email: form.email || undefined,
