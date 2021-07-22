@@ -17,7 +17,8 @@ const PhotoUpload = ({ urlString }) => {
         await fetch(`https://beanstalk-api.herokuapp.com/photos`, {
             header: {
                 "Content-Type": "application/json;char=UTF-8",
-                "Access-Control-Allow-Origin": "https://beanstalk-api.herokuapp.com",
+                "Access-Control-Allow-Origin": `${process.env.REACT_APP_BACKEND_URL}`,
+                "withCredentials": "true"
             },
             method: "POST",
             body: form,
