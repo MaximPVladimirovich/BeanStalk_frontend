@@ -51,7 +51,7 @@ function RegisterRoaster() {
       headers: {
         "Content-Type": "application/json;char=UTF-8",
         "Access-Control-Allow-Origin": `${process.env.REACT_APP_BACKEND_URL}`,
-        ""withCredentials"": "true"
+        "withCredentials": "true"
       },
     };
     axios
