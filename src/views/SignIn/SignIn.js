@@ -42,7 +42,7 @@ function SignIn(props) {
     console.log()
     setSignIn({ ...signIn, [name]: event.target.value });
   };
-
+  // This sucks
   const handleSignIn = function () {
     let axiosConfig = {
       headers: {
