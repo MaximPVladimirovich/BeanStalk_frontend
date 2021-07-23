@@ -147,7 +147,7 @@ Vishakj Aswani Kumar - vishakhkumar.work@gmail.com <br />
 Cubby Alexander - hall.j.alexander@gmail.com<br />
 James Maxim Bleeker - maxim.bleeker@gmail.com
 
-Project Link React: [https://github.com/MaximPVladimirovich/BeanStalk_frontend](https://github.com/MaximPVladimirovich/BeanStalk_frontend)
+Project Link React: [https://github.com/MaximPVladimirovich/BeanStalk_frontend](https://github.com/MaximPVladimirovich/BeanStalk_frontend) <br />
 roject Link Rails: [https://github.com/MaximPVladimirovich/Beanstalk_backend](https://github.com/MaximPVladimirovich/Beanstalk_backend)
 
 
