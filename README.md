@@ -33,12 +33,10 @@ A fun app for coffee enthusiasts
     <br />
     <a href="https://beanstalk-app.herokuapp.com/">View Demo</a>
     ·
-    <a href="https://github.com/MaximPVladimirovich/Expenses-full/issues">Report Bug</a>
+    <a href="https://github.com/MaximPVladimirovich/BeanStalk_frontend">Report Bug</a>
     ·
-    <a href="https://github.com/MaximPVladimirovich/Expenses-full/issues">Request Feature</a>
+    <a href="https://github.com/MaximPVladimirovich/BeanStalk_frontend">Request Feature</a>
   <br />
-  <a href="https://github.com/users/MaximPVladimirovich/projects/2">View Github Project</a>
-  </p>
 </p>
 
 
