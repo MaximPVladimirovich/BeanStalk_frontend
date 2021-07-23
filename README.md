@@ -145,4 +145,4 @@ Project Link: [https://github.com/MaximPVladimirovich/Expenses-full/issues](http
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/james-maxim-vladimirovich/
-[product-screenshot]: /public/b1.png
+[product-screenshot]: public/b1.png
