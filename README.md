@@ -1,72 +1,327 @@
 
-# Getting Started with Create React App
+<!--
+*** Thanks for checking out my project. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or open an issue with the tag "enhancement".
+*** Thanks again! 
+-->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
-## Available Scripts
+[![Maxim][linkedin-shield]][linkedin-url]
 
-In the project directory, you can run:
+<!-- PROJECT LOGO -->
 
-### `yarn start`
+  <h3 align="center">Future Finance</h3>
 
-Runs the app in the development mode.\
-Open [https://beanstalk-api.herokuapp.com](https://beanstalk-api.herokuapp.com) to view it in the browser.
+  <p align="center">
+    A simple expense tracker that runs in your browser!
+    <br />
+    <a href="https://github.com/MaximPVladimirovich/Expenses-full"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://ancient-cove-27847.herokuapp.com/">View Demo</a>
+    ·
+    <a href="https://github.com/MaximPVladimirovich/Expenses-full/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/MaximPVladimirovich/Expenses-full/issues">Request Feature</a>
+  <br />
+  <a href="https://github.com/users/MaximPVladimirovich/projects/2">View Github Project</a>
+  </p>
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+   
+  </ol>
+</details>
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-### `yarn eject`
+The goal of this app is to provide a simple way for anyone to keep track of their expenses. You can create expenses and edit basic information about your current spending habits. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A list of used resources that I found helpful are listed in the acknowledgements.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Built With
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+* [Webpack](https://webpack.js.org/)
+* [Node.js](https://nodejs.org/en/)
+* [React](https://reactjs.org/)
+* [MongoDB](https://www.mongodb.com/)
+* [Mongoose](https://mongoosejs.com/)
+* Express - Built in Node.js framwork
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<!-- GETTING STARTED -->
+## Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If you would like to use this project feel free to download or follow the instructions below.
 
-### Analyzing the Bundle Size
+### Prerequisites
+* npm
+  ```sh
+  npm install npm@latest -g
+* Install Node.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+1. Clone the repo
+   ```sh
+   git clone https://github.com/MaximPVladimirovich/Expenses-full.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your ENV variables in `.env`
+   ```JS
+   const MONGODB_URI = 'ENTER YOUR URL';
+   const JWT_SECRET = 'ENTER STRING'
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Deploying
+Webpack bundles all your code into a dynamic folder for easy deployement.</p>
+Configure for development and production<br/>
+1. Configure .babelrc
+```
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "react-hot-loader/babel"
+  ]
+}
+```
+2. Configure webpack<br/>
+- webpack.config.client.js
+```
+const path = require('path')
+const webpack = require('webpack')
+const CURRENT_WORKING_DIR = process.cwd()
 
-### Deployment
+const config = {
+  name: "browser",
+  // Sets process.env.NODE.ENV to value. Defaults to production.
+  mode: "development",
+  // Specifies how source maps are generated.
+  // Source maps are a way of mapping code from a compressed file.
+  devtool: 'eval-source-map',
+  // Specifies where webpack starts bundling code.
+  entry: [
+    'webpack-hot-middleware/client?reload=true', path.join(CURRENT_WORKING_DIR, 'client/main.js')
+  ],
+  // The output path for the bundled code
+  output: {
+    path: path.join(CURRENT_WORKING_DIR, '/dist'),
+    filename: 'bundle.js',
+    // All public assest in app
+    publicPath: '/dist/'
+  },
+  // Sets regex rule for which file is used in transpilation. 
+  module: {
+    rules: [
+      {
+        test: /\jsx?$/,
+        exclude: /node_modules/,
+        // This is the transpilation tool
+        use: ['babel-loader']
+      },
+      {
+        test: /\.(ttf|eot|svg|gif|jpg|png)(\?[\s\S]+)?$/,
+        use: 'file-loader'
+      }
+    ]
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoEmitOnErrorsPlugin()
+  ],
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    }
+  }
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+module.exports = config
+```
+- webpack.config.client.production.js 
+```
+const path = require('path')
+const CURRENT_WORKING_DIR = process.cwd()
 
-### `yarn build` fails to minify
+const config = {
+  mode: "production",
+  entry: [
+    path.join(CURRENT_WORKING_DIR, 'client/main.js')
+  ],
+  output: {
+    path: path.join(CURRENT_WORKING_DIR, '/dist'),
+    filename: 'bundle.js',
+    publicPath: "/dist/"
+  },
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: [
+          'babel-loader'
+        ]
+      },
+      {
+        test: /\.(ttf|eot|svg|gif|jpg|png)(\?[\s\S]+)?$/,
+        use: 'file-loader'
+      }
+    ]
+  }
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> c1f886ee6f78cec8c2eeb901dfa920321957648f
+module.exports = config
+```
+- webpack.config.server.js 
+```
+const path = require('path')
+const CURRENT_WORKING_DIR = process.cwd()
+const nodeExternals = require('webpack-node-externals')
+
+const config = {
+  name: "server",
+  entry: [path.join(CURRENT_WORKING_DIR, './server/server.js')],
+  target: "node",
+  output: {
+    path: path.join(CURRENT_WORKING_DIR, '/dist/'),
+    filename: "server.generated.js",
+    publicPath: '/dist/',
+    libraryTarget: 'commonjs2'
+  },
+  externals: [nodeExternals()],
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [
+          'babel-loader'
+        ]
+      },
+      {
+        test: /\.(ttf|eot|svg|gif|jpg|png)(\?[\s\S]+)?$/,
+        use: 'file-loader'
+      }
+    ]
+  }
+}
+module.exports = config
+```
+3. Add scripts to package.json
+```"scripts": {
+    "development": "nodemon",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  }
+  ```
+  4.Run npm script
+   ```sh
+   npm run build
+   ```
+   
+   5. From here you can continue creating a heroku app like normal and you should be good to go. remember env variables. 
+
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+
+[![Product Name Screen Shot][usage-screenshot1]]
+[![Product Name Screen Shot][usage-screenshot2]]
+
+
+
+
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/MaximPVladimirovich/Expenses-full/issues) for a list of proposed features (and known issues).
+
+
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+James Maxim Bleeker - maxim.bleeker@gmail.com
+
+Project Link: [https://github.com/MaximPVladimirovich/Expenses-full/issues](https://github.com/MaximPVladimirovich/Expenses-full)
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[usage-screenshot1]: client/assets/images/addexpense.png
+[usage-screenshot2]: client/assets/images/seeexpenses.png
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/james-maxim-vladimirovich/
+[product-screenshot]: client/assets/images/ffimg.png
