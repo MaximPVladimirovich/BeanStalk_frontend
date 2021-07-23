@@ -71,16 +71,26 @@ A fun app for coffee enthusiasts
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
 
 The goal of this app is to provide users a way to search anf interact with coffee roasters. A user can shop for a particular brand or browse the long list of roasts.
 
+####How We Did it
+WE started by dividing up the work with whomever was comfortable with a technology or task.
+As a team we frequently met on discord and zoom to catch each other up on progress and help fix issues.
+<a href="https://www.linkedin.com/in/daniel-j-scott/">Daniel Scot</a> was a huge help during this process and thank you <a href="https://www.linkedin.com/in/iraherman/">Ira Herman</a> for the assistance too!
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-A list of used resources that I found helpful are listed in the acknowledgements.
+
+
+
+
+
+
 
 ### Built With
-
+* [Discord](https://discord.com/)
 * [Webpack](https://webpack.js.org/)
 * [Node.js](https://nodejs.org/en/)
 * [React](https://reactjs.org/)
