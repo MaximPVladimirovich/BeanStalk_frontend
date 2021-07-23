@@ -1,7 +1,10 @@
-import MultiDropdownNavbar from "../../components/Navbars/MultiDropdownNavbar";
-import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+
+import WhiteNavbar from "../../components/Navbars/WhiteNavbar";
+import {useEffect, useState} from "react";
+import {useParams} from "react-router";
+
 import axios from "axios";
+import axiosConfig from "../../helpers/axiosConfig";
 import {
     Container,
     Row,
@@ -24,13 +27,6 @@ export default function RoasterDisplay(props) {
     }, [])
 
     const getRoasters = async () => {
-        let axiosConfig = {
-            headers: {
-                "Content-Type": "application/json;char=UTF-8",
-                "Access-Control-Allow-Origin": `${process.env.REACT_APP_BACKEND_URL}`,
-                "withCredentials": "true"
-            },
-        };
         try {
             axios.get(`${process.env.REACT_APP_BACKEND_URL}/roasters/${id}`, axiosConfig)
                 .then(res => {
@@ -44,7 +40,7 @@ export default function RoasterDisplay(props) {
 
     return (
         <>
-            <MultiDropdownNavbar colorPointOverride={0} />
+            <WhiteNavbar />
             <div className="wrapper">
                 <div className="section text-center landing-section">
                     <Container>

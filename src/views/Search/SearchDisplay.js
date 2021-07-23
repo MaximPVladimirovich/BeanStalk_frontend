@@ -1,7 +1,9 @@
-import MultiDropdownNavbar from "../../components/Navbars/MultiDropdownNavbar";
+
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
+
 import axios from "axios";
+import axiosConfig from "../../helpers/axiosConfig";
 import {
     Container,
     Row,
@@ -13,6 +15,7 @@ import {
 } from "reactstrap";
 import "./SearchDisplay.css";
 import FooterBlack from "../../components/Footers/FooterBlack";
+import WhiteNavbar from "../../components/Navbars/WhiteNavbar";
 
 export default function SearchDisplay() {
     const [roasterList, setRoasterList] = useState(null);
@@ -25,13 +28,6 @@ export default function SearchDisplay() {
     }, [])
 
     const getRoasters = async () => {
-        let axiosConfig = {
-            headers: {
-                "Content-Type": "application/json;char=UTF-8",
-                "Access-Control-Allow-Origin": `${process.env.REACT_APP_BACKEND_URL}`,
-                "withCredentials": "true"
-            },
-        };
         try {
             axios.get(`${process.env.REACT_APP_BACKEND_URL}/roasters`, axiosConfig)
                 .then(res => {
@@ -52,7 +48,7 @@ export default function SearchDisplay() {
 
     return (
         <>
-            <MultiDropdownNavbar colorPointOverride={0} />
+            <WhiteNavbar />
             <div className="wrapper">
                 <div className="section text-center landing-section">
                     <Container>
@@ -140,6 +136,12 @@ export default function SearchDisplay() {
                                                                 <p className="roast-count">{roaster.roast.length} different roasts</p>
                                                                 <a href="http://www.google.com" className="roaster-site">www.beanstalk.com</a>
                                                             </div>
+
+                                                        </div>
+                                                        <div className="second-info">
+                                                            <p className="roast-count">{roaster.roast.length} different roasts</p>
+                                                            <a href="http://www.google.com" className="roaster-site">{roaster.website}</a>
+
                                                         </div>
                                                     </div>
                                                 )

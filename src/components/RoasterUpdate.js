@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import axiosConfig from "../helpers/axiosConfig";
 import PhotoUpload from "./PhotoUpload";
 import RoastsDisplay from "../pages/RoastDisplay";
 
@@ -12,17 +13,11 @@ export default function RoasterUpdate({ roaster }) {
     console.log("is this the real life", roaster);
 
     const handleUpdate = async () => {
-        let axiosConfig = {
-            headers: {
-                "Content-Type": "application/json;char=UTF-8",
-                "Access-Control-Allow-Origin": `${process.env.REACT_APP_BACKEND_URL}`,
-                "withCredentials": "true",
-            },
-        };
+
         try {
             await axios
                 .put(
-                    `https://beanstalk-api.herokuapp.com/roasters/${roaster.id}`,
+                    `${process.env.REACT_APP_BACKEND_URL}/roasters/${roaster.id}`,
                     update,
                     axiosConfig
                 )
@@ -33,17 +28,11 @@ export default function RoasterUpdate({ roaster }) {
     };
 
     const deleteRoaster = async () => {
-        let axiosConfig = {
-            headers: {
-                "Content-Type": "application/json;char=UTF-8",
-                "Access-Control-Allow-Origin": `${process.env.REACT_APP_BACKEND_URL}`,
-                "withCredentials": "true",
-            },
-        };
+
         try {
             await axios
                 .delete(
-                    `https://beanstalk-api.herokuapp.com/roasters/${roaster.id}`,
+                    `${process.env.REACT_APP_BACKEND_URL}/roasters/${roaster.id}`,
                     axiosConfig
                 )
                 .then((res) => console.log(res));
