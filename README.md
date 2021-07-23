@@ -24,7 +24,9 @@ A fun app for coffee enthusiasts
   <p align="center">
    A fun 
     <br />
-    <a href="https://github.com/MaximPVladimirovich/Expenses-full"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/MaximPVladimirovich/Beanstalk_backend"><strong>Explore the backend docs »</strong></a>
+    <br />
+   <a href="https://github.com/MaximPVladimirovich/BeanStalk_frontend"><strong>Explore the frontend docs »</strong></a>
     <br />
     <br />
     <a href="https://beanstalk-app.herokuapp.com/">View Demo</a>
@@ -78,7 +80,6 @@ A list of used resources that I found helpful are listed in the acknowledgements
 
 ### Built With
 
-
 * [Webpack](https://webpack.js.org/)
 * [Node.js](https://nodejs.org/en/)
 * [React](https://reactjs.org/)
@@ -93,187 +94,8 @@ A list of used resources that I found helpful are listed in the acknowledgements
 If you would like to use this project feel free to download or follow the instructions below.
 
 ### Prerequisites
-* npm
-  ```sh
-  npm install npm@latest -g
-* Install Node.js
 
-
-### Installation
-
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/MaximPVladimirovich/Expenses-full.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your ENV variables in `.env`
-   ```JS
-   const MONGODB_URI = 'ENTER YOUR URL';
-   const JWT_SECRET = 'ENTER STRING'
-   ```
-
-## Deploying
-Webpack bundles all your code into a dynamic folder for easy deployement.</p>
-Configure for development and production<br/>
-1. Configure .babelrc
-```
-{
-  "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "targets": {
-          "node": "current"
-        }
-      }
-    ],
-    "@babel/preset-react"
-  ],
-  "plugins": [
-    "react-hot-loader/babel"
-  ]
-}
-```
-2. Configure webpack<br/>
-- webpack.config.client.js
-```
-const path = require('path')
-const webpack = require('webpack')
-const CURRENT_WORKING_DIR = process.cwd()
-
-const config = {
-  name: "browser",
-  // Sets process.env.NODE.ENV to value. Defaults to production.
-  mode: "development",
-  // Specifies how source maps are generated.
-  // Source maps are a way of mapping code from a compressed file.
-  devtool: 'eval-source-map',
-  // Specifies where webpack starts bundling code.
-  entry: [
-    'webpack-hot-middleware/client?reload=true', path.join(CURRENT_WORKING_DIR, 'client/main.js')
-  ],
-  // The output path for the bundled code
-  output: {
-    path: path.join(CURRENT_WORKING_DIR, '/dist'),
-    filename: 'bundle.js',
-    // All public assest in app
-    publicPath: '/dist/'
-  },
-  // Sets regex rule for which file is used in transpilation. 
-  module: {
-    rules: [
-      {
-        test: /\jsx?$/,
-        exclude: /node_modules/,
-        // This is the transpilation tool
-        use: ['babel-loader']
-      },
-      {
-        test: /\.(ttf|eot|svg|gif|jpg|png)(\?[\s\S]+)?$/,
-        use: 'file-loader'
-      }
-    ]
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
-  ],
-  resolve: {
-    alias: {
-      'react-dom': '@hot-loader/react-dom'
-    }
-  }
-}
-
-module.exports = config
-```
-- webpack.config.client.production.js 
-```
-const path = require('path')
-const CURRENT_WORKING_DIR = process.cwd()
-
-const config = {
-  mode: "production",
-  entry: [
-    path.join(CURRENT_WORKING_DIR, 'client/main.js')
-  ],
-  output: {
-    path: path.join(CURRENT_WORKING_DIR, '/dist'),
-    filename: 'bundle.js',
-    publicPath: "/dist/"
-  },
-  module: {
-    rules: [
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: [
-          'babel-loader'
-        ]
-      },
-      {
-        test: /\.(ttf|eot|svg|gif|jpg|png)(\?[\s\S]+)?$/,
-        use: 'file-loader'
-      }
-    ]
-  }
-}
-
-module.exports = config
-```
-- webpack.config.server.js 
-```
-const path = require('path')
-const CURRENT_WORKING_DIR = process.cwd()
-const nodeExternals = require('webpack-node-externals')
-
-const config = {
-  name: "server",
-  entry: [path.join(CURRENT_WORKING_DIR, './server/server.js')],
-  target: "node",
-  output: {
-    path: path.join(CURRENT_WORKING_DIR, '/dist/'),
-    filename: "server.generated.js",
-    publicPath: '/dist/',
-    libraryTarget: 'commonjs2'
-  },
-  externals: [nodeExternals()],
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [
-          'babel-loader'
-        ]
-      },
-      {
-        test: /\.(ttf|eot|svg|gif|jpg|png)(\?[\s\S]+)?$/,
-        use: 'file-loader'
-      }
-    ]
-  }
-}
-module.exports = config
-```
 3. Add scripts to package.json
-```"scripts": {
-    "development": "nodemon",
-    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
-    "start": "NODE_ENV=production node ./dist/server.generated.js"
-  }
-  ```
-  4.Run npm script
-   ```sh
-   npm run build
-   ```
-   
-   5. From here you can continue creating a heroku app like normal and you should be good to go. remember env variables. 
-
 
 
 
@@ -323,4 +145,4 @@ Project Link: [https://github.com/MaximPVladimirovich/Expenses-full/issues](http
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/james-maxim-vladimirovich/
-[product-screenshot]: client/assets/images/ffimg.png
+[product-screenshot]: public/b1.png
