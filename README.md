@@ -28,6 +28,9 @@ A fun app for coffee enthusiasts
     <br />
    <a href="https://github.com/MaximPVladimirovich/BeanStalk_frontend"><strong>Explore the frontend docs »</strong></a>
     <br />
+  <a href="https://trello.com/b/WisyCCSO/mvp-user-stories"><strong>View Trello »</strong></a>
+    <br />
+  
     <br />
     <a href="https://beanstalk-app.herokuapp.com/">View Demo</a>
     ·
