@@ -77,8 +77,9 @@ A fun app for coffee enthusiasts
 The goal of this app is to provide users a way to search anf interact with coffee roasters. A user can shop for a particular brand or browse the long list of roasts.
 
 #### How We Did it
-WE started by dividing up the work with whomever was comfortable with a technology or task.<br />
+We started by dividing up the work with whomever was comfortable with a technology or task.<br />
 As a team we frequently met on discord and zoom to catch each other up on progress and help fix issues. <br />
+Overall I think this project was a huge success and it was tremendously fun to work with a fun group of guys. </br>
 <a href="https://www.linkedin.com/in/daniel-j-scott/">Daniel Scot</a> was a huge help during this process and thank you <a href="https://www.linkedin.com/in/iraherman/">Ira Herman</a> for the assistance too!
 
 
