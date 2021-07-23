@@ -132,11 +132,10 @@ export default function SearchDisplay() {
                                                                     <i className={`fa fa-heart ${true ? "filled" : ""}`} />
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div className="second-info">
-                                                            <p className="roast-count">{roaster.roast.length} different roasts</p>
-                                                            <a href={roaster.website} className="roaster-site">{roaster.website}</a>
-
+                                                            <div className="second-info">
+                                                                <p className="roast-count">{roaster.roast.length} different roasts</p>
+                                                                <a href={roaster.website} className="roaster-site">{roaster.website}</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 )
