@@ -70,6 +70,20 @@ function AccountSettings() {
         .then(res => console.log(res))
   }
 
+  const deleteRoaster = async () => {
+    try {
+      await axios
+          .delete(
+              `${process.env.REACT_APP_BACKEND_URL}/roasters/${id}`,
+              axiosConfig
+          )
+          .then((res) => history.push('/'));
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+
   const updateImage = async (img) => {
     const form = new FormData();
     form.append("image", img);
@@ -189,11 +203,22 @@ function AccountSettings() {
                   <div className="text-center">
                     <Button
                         className="btn-wd btn-round submit"
-                        color="danger"
+                        color="info"
                         type="submit"
                         onClick={updateRoaster}
                     >
                       Save
+                    </Button>
+                  </div>
+
+                  <div className="text-center">
+                    <Button
+                        className="btn-wd btn-round submit"
+                        color="danger"
+                        type="submit"
+                        onClick={deleteRoaster}
+                    >
+                      Delete Account
                     </Button>
                   </div>
                 </Form>

@@ -16,7 +16,7 @@ export default function RoasterUpdate({ roaster }) {
         try {
             await axios
                 .put(
-                    `https://beanstalk-api.herokuapp.com/roasters/${roaster.id}`,
+                    `${process.env.REACT_APP_BACKEND_URL}/roasters/${roaster.id}`,
                     update,
                     axiosConfig
                 )
@@ -30,7 +30,7 @@ export default function RoasterUpdate({ roaster }) {
         try {
             await axios
                 .delete(
-                    `https://beanstalk-api.herokuapp.com/roasters/${roaster.id}`,
+                    `${process.env.REACT_APP_BACKEND_URL}/roasters/${roaster.id}`,
                     axiosConfig
                 )
                 .then((res) => console.log(res));
