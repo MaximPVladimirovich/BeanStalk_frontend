@@ -115,7 +115,7 @@ If you would like to use this project feel free to download or follow the instru
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/MaximPVladimirovich/Expenses-full/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/MaximPVladimirovich/BeanStalk_frontend/issues) for a list of proposed features (and known issues).
 
 
 
@@ -131,9 +131,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
+Vishakj Aswani Kumar - vishakhkumar.work@gmail.com
+Cubby Alexander - hall.j.alexander@gmail.com
 James Maxim Bleeker - maxim.bleeker@gmail.com
 
-Project Link: [https://github.com/MaximPVladimirovich/Expenses-full/issues](https://github.com/MaximPVladimirovich/Expenses-full)
+Project Link React: [https://github.com/MaximPVladimirovich/BeanStalk_frontend](https://github.com/MaximPVladimirovich/BeanStalk_frontend)
+roject Link Rails: [https://github.com/MaximPVladimirovich/Beanstalk_backend](https://github.com/MaximPVladimirovich/Beanstalk_backend)
 
 
 
