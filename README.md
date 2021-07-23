@@ -19,15 +19,15 @@
 
 <!-- PROJECT LOGO -->
 
-  <h3 align="center">Future Finance</h3>
-
+  <h3 align="center">BeanStalk</h3>
+A fun app for coffee enthusiasts
   <p align="center">
-    A simple expense tracker that runs in your browser!
+   A fun 
     <br />
     <a href="https://github.com/MaximPVladimirovich/Expenses-full"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://ancient-cove-27847.herokuapp.com/">View Demo</a>
+    <a href="https://beanstalk-app.herokuapp.com/">View Demo</a>
     ·
     <a href="https://github.com/MaximPVladimirovich/Expenses-full/issues">Report Bug</a>
     ·
@@ -71,7 +71,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-The goal of this app is to provide a simple way for anyone to keep track of their expenses. You can create expenses and edit basic information about your current spending habits. 
+The goal of this app is to provide users a way to search anf interact with coffee roasters. A user can shop for a particular brand or browse the long list of roasts.
 
 
 A list of used resources that I found helpful are listed in the acknowledgements.
@@ -82,9 +82,8 @@ A list of used resources that I found helpful are listed in the acknowledgements
 * [Webpack](https://webpack.js.org/)
 * [Node.js](https://nodejs.org/en/)
 * [React](https://reactjs.org/)
-* [MongoDB](https://www.mongodb.com/)
-* [Mongoose](https://mongoosejs.com/)
-* Express - Built in Node.js framwork
+* [Postgresql](https://www.postgresql.org/)
+* [](https://mongoosejs.com/)
 
 
 
