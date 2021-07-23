@@ -71,10 +71,11 @@ A fun app for coffee enthusiasts
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
 
 The goal of this app is to provide users a way to search anf interact with coffee roasters. A user can shop for a particular brand or browse the long list of roasts.
 
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 A list of used resources that I found helpful are listed in the acknowledgements.
 
@@ -84,8 +85,7 @@ A list of used resources that I found helpful are listed in the acknowledgements
 * [Node.js](https://nodejs.org/en/)
 * [React](https://reactjs.org/)
 * [Postgresql](https://www.postgresql.org/)
-* [](https://mongoosejs.com/)
-
+* [Rails](https://rubyonrails.org/)
 
 
 <!-- GETTING STARTED -->
@@ -95,8 +95,9 @@ If you would like to use this project feel free to download or follow the instru
 
 ### Prerequisites
 
-3. Add scripts to package.json
-
+*The Ruby language version 2.2.2 or newer.
+* The RubyGems packaging system, which is installed with Ruby by default. To learn more about RubyGems, please read the RubyGems Guides.
+* Node
 
 
 <!-- USAGE EXAMPLES -->
@@ -139,10 +140,10 @@ Project Link: [https://github.com/MaximPVladimirovich/Expenses-full/issues](http
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[usage-screenshot1]: client/assets/images/addexpense.png
-[usage-screenshot2]: client/assets/images/seeexpenses.png
+[usage-screenshot1]: readme.img/Screenshot 2021-07-23020907.png
+[usage-screenshot2]: readme.img/Screenshot 2021-07-23021058.png
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/james-maxim-vladimirovich/
-[product-screenshot]: public/b1.png
+[product-screenshot]: readme.img/b2.png
