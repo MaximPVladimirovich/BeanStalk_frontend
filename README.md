@@ -140,8 +140,8 @@ Project Link: [https://github.com/MaximPVladimirovich/Expenses-full/issues](http
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[usage-screenshot1]: readme.img/Screenshot2021-07-23020907.png
-[usage-screenshot2]: readme.img/Screenshot2021-07-23021058.png
+[usage-screenshot1]: readme.img/Screenshot 2021-07-23020907.png
+[usage-screenshot2]: readme.img/Screenshot 2021-07-23021058.png
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
