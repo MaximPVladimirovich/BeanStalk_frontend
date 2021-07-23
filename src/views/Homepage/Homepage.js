@@ -101,54 +101,36 @@ function LandingPage() {
             <Row>
               <Col md="4">
                 <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={
-                          require("assets/img/faces/clem-onojeghuo-3.jpg")
-                            .default
-                        }
-                      />
-                    </a>
-                  </div>
+                  {/*<div className="card-avatar">*/}
+                  {/*  <a href="#pablo" onClick={(e) => e.preventDefault()}>*/}
+                  {/*    <img*/}
+                  {/*      alt="..."*/}
+                  {/*      src={*/}
+                  {/*        require("assets/img/faces/clem-onojeghuo-3.jpg")*/}
+                  {/*          .default*/}
+                  {/*      }*/}
+                  {/*    />*/}
+                  {/*  </a>*/}
+                  {/*</div>*/}
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
+                        <CardTitle tag="h4">Maxim Bleeker</CardTitle>
                         <h6 className="card-category text-muted">
-                          Product Manager
+                          Java(script) Addict
                         </h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
-                      Teamwork is so important that it is virtually impossible
-                      for you to reach the heights of your capabilities or make
-                      the money that you want without becoming very good at it.
+                      Lots and lots of work on the Ruby on Rails backend. 5 models, authentications, sessions,
+                      multiple nested relationships, all without putting down his coffee.
                     </p>
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button>
-                    <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/james-maxim-vladimirovich/"
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -157,52 +139,33 @@ function LandingPage() {
               </Col>
               <Col md="4">
                 <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={
-                          require("assets/img/faces/joe-gardner-2.jpg").default
-                        }
-                      />
-                    </a>
-                  </div>
+                  {/*<div className="card-avatar">*/}
+                  {/*  <a href="#pablo" onClick={(e) => e.preventDefault()}>*/}
+                  {/*    <img*/}
+                  {/*      alt="..."*/}
+                  {/*      src={*/}
+                  {/*        require("assets/img/faces/joe-gardner-2.jpg").default*/}
+                  {/*      }*/}
+                  {/*    />*/}
+                  {/*  </a>*/}
+                  {/*</div>*/}
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Sophie West</CardTitle>
-                        <h6 className="card-category text-muted">Designer</h6>
+                        <CardTitle tag="h4">Cubby Alexander</CardTitle>
+                        <h6 className="card-category text-muted">Two Stacks A Day</h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
-                      A group becomes a team when each member is sure enough of
-                      himself and his contribution to praise the skill of the
-                      others. No one can whistle a symphony. It takes an
-                      orchestra to play it.
+                      Double shots of React for breakfast. Router setup, event handling, state management,
+                      conditional rendering of asynchronous function data, and crema smooth UI.
                     </p>
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button>
-                    <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/cubby-alexander-52800234/"
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
@@ -211,53 +174,24 @@ function LandingPage() {
               </Col>
               <Col md="4">
                 <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={
-                          require("assets/img/faces/erik-lucatero-2.jpg")
-                            .default
-                        }
-                      />
-                    </a>
-                  </div>
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Robert Orben</CardTitle>
-                        <h6 className="card-category text-muted">Developer</h6>
+                        <CardTitle tag="h4">Vishakh Kumar</CardTitle>
+                        <h6 className="card-category text-muted">Expresso.js</h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
-                      The strength of the team is each individual member. The
-                      strength of each member is the team. If you can laugh
-                      together, you can work together, silence isn’t golden,
-                      it’s deadly.
+                      Buzzing on full CRUD -- 16 oz of Axios, five times a day, late into the night.
+                      Integrating API calls with a full suite of front-end functionality. The link between
+                      front- and back-end.
                     </p>
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-link btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button>
-                    <Button
                       className="btn-link btn-just-icon"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/in/vishakh-kumar/"
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
