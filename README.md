@@ -15,7 +15,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Linkedin][linkedin-shield]][linkedin-url]
+
 
 <!-- PROJECT LOGO -->
 
@@ -148,7 +148,7 @@ Cubby Alexander - hall.j.alexander@gmail.com<br />
 James Maxim Bleeker - maxim.bleeker@gmail.com
 
 Project Link React: [https://github.com/MaximPVladimirovich/BeanStalk_frontend](https://github.com/MaximPVladimirovich/BeanStalk_frontend) <br />
-roject Link Rails: [https://github.com/MaximPVladimirovich/Beanstalk_backend](https://github.com/MaximPVladimirovich/Beanstalk_backend)
+Project Link Rails: [https://github.com/MaximPVladimirovich/Beanstalk_backend](https://github.com/MaximPVladimirovich/Beanstalk_backend)
 
 
 
@@ -160,5 +160,5 @@ roject Link Rails: [https://github.com/MaximPVladimirovich/Beanstalk_backend](ht
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/james-maxim-vladimirovich/
+
 [product-screenshot]: readme.img/b2.png
