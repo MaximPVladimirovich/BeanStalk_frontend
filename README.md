@@ -72,8 +72,8 @@ A fun app for coffee enthusiasts
 ## About The Project
 
 
-
 The goal of this app is to provide users a way to search anf interact with coffee roasters. A user can shop for a particular brand or browse the long list of roasts.
+
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
