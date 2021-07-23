@@ -10,7 +10,6 @@ import RegisterRoaster from "./views/Registrations/RegisterRoaster";
 import RegisterUser from "./views/Registrations/RegisterUser";
 import RoasterAccountSettings from "./views/RoasterAcct/AccountSettings";
 import RoasterList from "./components/RoasterList";
-import RoasterUpdate from "./components/RoasterUpdate";
 import ScrollToTop from "./helpers/ScrollToTop";
 import AuthenticationContext from "./AuthenticationContext";
 
@@ -40,12 +39,13 @@ function App() {
                             </Route>
                             <Route exact path="/search" component={SearchDisplay} />
                             <Route exact path="/roaster/:id/settings" component={RoasterAccountSettings} />
+                            <Route exact path="/hidden-list" component={RoasterList} />
                             <Route exact path="/" component={Homepage} />
                     </ScrollToTop>
                 </Switch>
             </Router>
             </AuthenticationContext.Provider>
-            <RoasterList />
+
         </div>
     );
 }
